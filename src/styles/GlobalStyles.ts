@@ -12,7 +12,7 @@ export default createGlobalStyle`
     --retweet: #00C06B;
     --like: #E8265E;
     --twitter: #996DFF;
-    --twitter-dark-hover: #011017;
+    --twitter-dark-hover: #0d0117;
     --twitter-light-hover: #633BBB; 
   }
 
@@ -20,14 +20,13 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     color: var(--white);
   }
   
   *, button, input {
     border: 0;
     background: none;
-    font: -apple-system, system-ui, blinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
   }
 
   html, body, #root {
@@ -39,6 +38,7 @@ export default createGlobalStyle`
 
   html {
     background: var(--primary);
+    overflow-x: hidden;
   }
 
 `
