@@ -14,6 +14,18 @@ import {
 import Feed from '../Feed';
 import profilepic from '../assets/profilepic.svg';
 
+interface YourUser {
+  name: string;
+  email: string;
+  country: string;
+}
+
+export const You:YourUser = {
+  name: "guilherme boulos",
+  email: "@macarao_com_salsixa",
+  country: "Brasil"
+}
+
 const ProfilePage: React.FC = () => {
   return (
     <Container>
@@ -27,8 +39,8 @@ const ProfilePage: React.FC = () => {
           Edit profile
         </EditButton>
 
-        <h1>guilherme boulos</h1>
-        <h2>@guilherme_boulos</h2>
+        <h1>{ You.name }</h1>
+        <h2>{You.email}</h2>
 
         <Description>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="Youtube.com">meu canal</a>
@@ -37,7 +49,7 @@ const ProfilePage: React.FC = () => {
         <UserInfo>
           <li>
             <Location />
-            São Paulo, Brasil
+            São Paulo, {You.country}
           </li>
           <li> 
             <CakeIcon />
@@ -47,10 +59,10 @@ const ProfilePage: React.FC = () => {
 
         <Followage>
           <span>
-            Seguindo <strong>69</strong>
+            Seguindo <strong>{Math.floor(Math.random() * 100)}</strong>
           </span>
           <span>
-          <strong>6969</strong> Seguidores
+          <strong>{Math.floor(Math.random() * 10000)}</strong> Seguidores
           </span>
         </Followage>
       </ProfileData>

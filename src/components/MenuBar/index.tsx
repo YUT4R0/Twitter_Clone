@@ -16,6 +16,7 @@ import {
 } from './styles';
 import Button from '../Button'
 import profilepic from '../assets/profilepic.svg'
+import { You } from '../ProfilePage'
 
 const MenuBar: React.FC = () => {
   return (
@@ -58,8 +59,8 @@ const MenuBar: React.FC = () => {
         <img src={profilepic} />
 
         <ProfileData>
-          <strong>guilhereme boulos</strong>
-          <span>@guilherme boulos</span>
+          <strong>{You.name}</strong>
+          <span>{You.email}</span>
         </ProfileData>
 
         <ExitIcon title="Exit Account"/>

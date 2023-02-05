@@ -41,6 +41,13 @@ export const Logo = styled(Wolframlanguage)`
   cursor: pointer;
 
   fill: var(--twitter);
+
+  transition: all .1s ease-in-out;
+
+  &:hover {
+    filter: brightness(.7);
+    background: var(--twitter-dark-hover);
+  }
 `
 
 export const MenuButton = styled.button`

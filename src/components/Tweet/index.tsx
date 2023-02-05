@@ -34,30 +34,26 @@ const Tweet: React.FC = () => {
             <strong>Jones ManoBrown</strong>
             <span>@gatodogta_sa</span>
             <Dot />
-            <time>27 de jun</time>        
+            <time>{new Date().toLocaleDateString()}</time>        
           </Header>
-
           <Description>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsum in, nihil commodi modi expedita ab cumque consequatur? Itaque modi alias repudiandae consequatur officiis incidunt magni voluptate temporibus distinctio fugiat!
           </Description>
-
           <ImageContent />
-
           <Icons>
             <Status>
               <CommentIcon />
-                18
+              {Math.floor( Math.random() * 100 )}
             </Status>
             <Status>
               <RetweetIcon />
-              999
+              {Math.floor( Math.random() * 100 )}
             </Status>
             <Status>
               <LikeIcon />
-                1
+              {Math.floor( Math.random() * 100 )}
             </Status>
           </Icons>
-
         </Content>
       </Body>
 

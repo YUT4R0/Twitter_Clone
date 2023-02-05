@@ -11,6 +11,7 @@ import {
   EmailIcon,
 } from './styles';
 import ProfilePage from '../ProfilePage'
+import { tweet_count } from '../Feed'
 
 const Main: React.FC = () => {
   return (
@@ -21,7 +22,7 @@ const Main: React.FC = () => {
         </button>
         <ProfileInfo>
           <strong>guilherme boulos</strong>
-          <span>666 Tweets</span>
+          <span> {tweet_count} tweets </span>
         </ProfileInfo>
       </Header>
 
