@@ -2,6 +2,31 @@ import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--white);
+  }
+  
+  html, body, #root {
+    max-height: 100vh;
+    max-width: 100vw;
+    height: 100%;
+    width: 100%;
+  }
+
+  *, button, input {
+    border: 0;
+    background: none;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
+  }
+
+  html {
+    background: var(--primary);
+    overflow-x: hidden;
+  }
+
   :root {
     --primary: #000;
     --secondary: #15181C;
@@ -14,31 +39,6 @@ export default createGlobalStyle`
     --twitter: #996DFF;
     --twitter-dark-hover: #0d0117;
     --twitter-light-hover: #633BBB; 
-  }
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: var(--white);
-  }
-  
-  *, button, input {
-    border: 0;
-    background: none;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
-  }
-
-  html, body, #root {
-    max-height: 100vh;
-    max-width: 100vw;
-    height: 100%;
-    width: 100%;
-  }
-
-  html {
-    background: var(--primary);
-    overflow-x: hidden;
   }
 
 `

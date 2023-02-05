@@ -6,9 +6,10 @@ export const Container = styled.div`
   display: flex; 
   flex-direction: column;
 
-  height: 100%;
+  max-height: 100%;
 
   overflow-y: auto;
+
   ::webkit-scrollbar {
     display: none;
   }
@@ -27,11 +28,11 @@ export const Banner = styled.div`
   > img {
       position: absolute;
 
-      bottom: max(-3.75rem, -10vh);
+      bottom: max(-3.75rem, -10vw);
       left: 1rem;
 
-      height: max(2.8125rem, min(8.4375rem, 22vh));
-      width: max(2.8125rem, min(8.4375rem, 22vh));
+      height: max(2.8125rem, min(8.4375rem, 22vw));
+      width: max(2.8125rem, min(8.4375rem, 22vw));
 
       border-radius: 50%;
       border: 3.75px solid var(--primary);
@@ -48,10 +49,7 @@ export const Banner = styled.div`
 export const ProfileData = styled.div`
   position: relative;
 
-  padding:
-          min(calc(10vw + .5rem), 4.1875rem)
-          1rem
-          0;
+  padding: min(calc(10vw + .5rem), 4.1875rem) 1rem 0;
   display: flex;
   flex-direction: column;
 

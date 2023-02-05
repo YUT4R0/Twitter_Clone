@@ -53,10 +53,10 @@ const ProfilePage: React.FC = () => {
           <strong>6969</strong> Seguidores
           </span>
         </Followage>
-
-        <Feed />
-
       </ProfileData>
+
+      <Feed />
+
     </Container>
   )
 }

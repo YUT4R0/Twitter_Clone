@@ -10,7 +10,7 @@ export const Container = styled.div`
 
   @media(min-width: 500px) {
     border-left: 1px solid var(--outline);
-    border-left: 1px solid var(--outline);
+    border-right: 1px solid var(--outline);
   }
 
 `;
@@ -79,8 +79,7 @@ export const BottomMenu = styled.div`
   padding: .5rem min(3rem, max(10vw, .625rem));
 
   @media(min-width: 500px) {
-    display: none;
-     
+    display: none;  
   }
 `
 

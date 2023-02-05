@@ -33,7 +33,7 @@ export const Retwitted = styled.div`
 
     &:hover {
       text-decoration: underline;
-      background: var(--twitter-dark-hover);
+      background: #090909;
     }
   }
 `
